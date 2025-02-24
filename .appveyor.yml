@@ -2,7 +2,8 @@ environment:
   # This key is encrypted using secdev's appveyor private key,
   # dissected only on master builds (not PRs) and is used during
   # npcap OEM installation
-  npcap_oem_key:
+  npcap_oem_key: connotation 
+  local
     secure: d120KTZBsVnzZ+pFPLPEOTOkyJxTVRjhbDJn9L+RYnM=
   # Python versions that will be tested
   # Note: it defines variables that can be used later
@@ -19,7 +20,7 @@ environment:
       UT_FLAGS: "-k scanner"
 
 # There is no build phase for Scapy
-build: off
+build: on
 
 install:
   # Log some debug info
